@@ -48,7 +48,7 @@ var mat = new THREE.ShaderMaterial({
   uniforms: {
     uTime: {value: 0},
     uLight: {value: new THREE.Color("red").multiplyScalar(1.5)},
-    uColor: {value: new THREE.Color("maroon").multiplyScalar(1)},
+    uColor: {value: new THREE.Color("yellow").multiplyScalar(1)},
     uFire: {value: new THREE.Color(1, 0.75, 0)}
   },
 
@@ -252,3 +252,4 @@ renderer.setAnimationLoop(() => {
   oUs.forEach(ou => {ou.uTime.value = t;});
   renderer.render(scene, camera);
 });
+
